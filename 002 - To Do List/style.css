@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, #36d1dc, #5b86e5);
+    font-family: 'Roboto Mono';
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-image: linear-gradient(#141e30, #243b55);
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.txt {
+    color: aliceblue;
+    margin: 0;
+}
+
+.heading {
+    margin-bottom: 1rem;
+    letter-spacing: .3rem;
+    text-align: center;
+}
+
+#current-date {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#todo {
+    color: aliceblue;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin: 1rem 0;
+}
+
+.single-line {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.check {
+    margin-right: .5rem;
+}
+
+.add-input-field {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#text-field {
+    border: 1px solid #36d1dc;
+    border-radius: 0.5rem;
+    background-color: #243b55;
+    color: aliceblue;
+    font-family: inherit;
+    padding: .5rem;
+    outline: none;
+    width: 12rem;
+}
+
+#text-field:hover {
+    background-color: aliceblue;
+    color: #243b55;
+}
+
+.btn-style {
+    border: 1px solid #36d1dc;
+    border-radius: 0.5rem;
+    background-color: #243b55;
+    color: #36d1dc;
+    font-weight: bold;
+    font-family: inherit;
+    padding: 0.5rem;
+}
+
+.btn-style:hover {
+    background-color: aliceblue;
+    color: #243b55;
+}
