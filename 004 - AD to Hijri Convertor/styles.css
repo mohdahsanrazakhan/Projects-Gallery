@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #36353a;
+  font-family: 'IBM Plex Mono', monospace;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+h1 {
+  letter-spacing: 1.5px;
+  font-size: 25px;
+  margin: 0px;
+  padding-bottom: 2rem;
+}
+
+@keyframes background-pen {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+
+h1>.magic {
+  animation: background-pen 3s linear infinite;
+  background: linear-gradient(to right,
+      red,
+      white,
+      purple,
+      white,
+      red);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+.card {
+  background: linear-gradient(to right, red, purple);
+  width: 250px;
+  padding: 3px;
+}
+
+.container {
+  background: #363636;
+  color: #ffffff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#AD {
+  font-family: inherit;
+  outline: none;
+  margin: 1rem;
+  padding: 5px;
+}
+
+#btn {
+  border: 1px solid;
+  border-radius: 7px;
+  font-family: inherit;
+  color: #36353a;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  font-weight: bold;
+}
+
+#hijri {
+  color: #ffffff;
+  margin: 32px 0 16px 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer:hover .magic {
+  animation: background-pen 3s linear infinite;
+  background: linear-gradient(to right,
+      red,
+      white,
+      purple,
+      white,
+      red);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
