@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Orbitron&family=Roboto+Mono&family=Zeyada&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(bg.svg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.container {
+  width: 500px;
+  height: 300px;
+  background-image: linear-gradient(rgba(106, 232, 230, 0.5), rgba(234, 234, 234, 0.5), rgba(255, 129, 161, 0.5));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#advice {
+  font-family: 'Zeyada';
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.buttons .features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.features ul {
+  display: flex;
+}
+
+.features ul li {
+  margin: 0 5px;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  cursor: pointer;
+  background: linear-gradient(rgba(106, 232, 230, 0.8), rgba(234, 234, 234, 0.8), rgba(255, 129, 161, 0.8));
+  list-style: none;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.features ul li:first-child {
+  margin-left: 0;
+}
+
+ul li.speech:is(:hover, .active) {
+  color: #fff;
+  background: rgba(106, 232, 230, 0.8);
+  backdrop-filter: blur(2px);
+}
+
+ul li.copy:is(:hover, .active) {
+  color: #fff;
+  background: rgba(255, 129, 161, 0.8);
+  backdrop-filter: blur(2px);
+}
+
+ul li.twitter:is(:hover, .active) {
+  color: #fff;
+  background: rgba(0, 172, 238, 0.8);
+  backdrop-filter: blur(2px);
+}
+
+ul .speech.active {
+  pointer-events: none;
+}
+
+button {
+  border: none;
+  color: #000;
+  font-family: 'Roboto Mono';
+  font-weight: bold;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 13px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  background-image: linear-gradient(rgba(106, 232, 230, 0.8), rgba(234, 234, 234, 0.8), rgba(255, 129, 161, 0.8));
+}
+
+button.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+footer {
+  font-family: 'Roboto Mono';
+  position: absolute;
+  bottom: 10px;
+}
