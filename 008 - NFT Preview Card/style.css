@@ -17,6 +17,7 @@ body {
 
 h1 {
   font-size: 24px;
+  cursor: pointer;
 }
 
 p {
@@ -73,6 +74,10 @@ p {
 }
 
 .nft-card .container .primary-text-color {
+  color: hsl(0, 0%, 100%);
+}
+
+.nft-card .container .primary-text-color:hover {
   color: hsl(178, 100%, 50%);
 }
 
@@ -93,6 +98,10 @@ p {
 .nft-card .container .icons #ethereum {
   width: 15px;
   margin-right: 10px;
+}
+
+.nft-card .container .eth-text-color {
+  color: hsl(178, 100%, 50%);
 }
 
 .nft-card .container .icons #clock {
