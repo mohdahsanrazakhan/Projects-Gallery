@@ -26,6 +26,7 @@ main {
 
 #advice-number {
   color: hsl(150, 100%, 66%);
+  font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   margin-top: 20px;
