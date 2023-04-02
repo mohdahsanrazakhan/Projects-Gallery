@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,800&display=swap');
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-Red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--Off-white);
+  font-family: 'Poppins', sans-serif;
+  color: var(--Smokey-grey);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+main {
+  color: var(--Off-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main h1 {
+  text-align: center;
+  position: fixed;
+  top: 0;
+}
+
+.card {
+  background-color: var(--White);
+  border-radius: 15px 15px 70px 15px;
+  padding: 30px;
+}
+
+.input {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dob {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+input {
+  font-size: 30px;
+  width: 100px;
+  font-family: inherit;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 0 0 0 5px;
+}
+
+.division {
+  margin: 20px 0;
+}
+
+.division hr {
+  border-style: solid;
+  border-color: var(--Light-grey);
+}
+
+/* .division img {
+  background-color: var(--Purple);
+  width: 25px;
+  padding: 15px;
+  border-radius: 50%;
+} */
+
+.show-dob {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  color: var(--Off-black)
+}
+
+.show-dob span {
+  color: var(--Purple);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
