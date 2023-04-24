@@ -97,8 +97,42 @@ main {
   margin: 5px;
   padding: 5px;
   border-radius: 7px;
+  border: 0.3px solid #323330;
   background-color: #373a36;
   color: #d48166;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  opacity: 0.9;
+}
+
+.tech .html {
+  color: #f06529;
+}
+
+.tech .html:hover {
+  background-color: #f06529;
+  color: #323330;
+  font-style: bold;
+}
+
+.tech .css {
+  color: #008dd2;
+}
+
+.tech .css:hover {
+  background-color: #2965f1;
+  color: #323330;
+  font-style: bold;
+}
+
+.tech .js {
+  color: #f0db4f;
+}
+
+.tech .js:hover {
+  background-color: #f0db4f;
+  color: #323330;
+  font-style: bold;
 }
 
 h1 {
