@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces:wght@700&family=IBM+Plex+Mono&family=IBM+Plex+Sans&family=Lato&family=Manrope:wght@800&family=Montserrat:wght@500;700&family=Orbitron&family=Outfit&family=Playfair+Display&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #212A3E;
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #9BA4B5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: #F1F6F9;
+  width: 300px;
+  height: 250px;
+  padding: 15px;
+  border: 1px solid #394867;
+  border-radius: 25px;
+  box-shadow: 15px 15px 5px #394867;
+}
+
+.check-year {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+#year {
+  padding: 5px;
+  border: 1px solid #212A3E;
+  border-radius: 3px;
+  outline: none;
+  font-size: inherit;
+}
+
+button {
+  margin-top: 5px;
+  border: 1px solid #394867;
+  border-radius: 5px;
+  padding: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #394867;
+  color: #F1F6F9;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  font-style: italic;
+}
