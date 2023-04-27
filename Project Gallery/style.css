@@ -37,6 +37,20 @@ main {
   margin: 20px 20px;
 }
 
+.search-bar {
+  margin: 25px 0;
+}
+
+.search-bar input {
+  font-family: inherit;
+  padding: 5px;
+}
+
+.search-bar button {
+  font-family: inherit;
+  padding: 5px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
