@@ -167,15 +167,36 @@ h1 {
   transform: scale(1.1);
 }
 
-.fab {
+.fab,
+.fas {
   color: var(--text-color);
   font-size: 2em;
   transition: transform .5s ease;
 }
 
-.fab:hover {
+.fab:hover,
+.fas:hover {
   color: #008dd2;
   transform: scale(1.1);
+}
+
+
+/* Popup functionality */
+#icons {
+  position: relative;
+}
+
+#icons .tooltip {
+  display: none;
+  position: absolute;
+  background-color: rgb(221, 174, 148);
+  padding: .5rem;
+  min-width: fit-content;
+  border-radius: 10px;
+}
+
+#icons:hover .tooltip {
+  display: block;
 }
 
 footer {
