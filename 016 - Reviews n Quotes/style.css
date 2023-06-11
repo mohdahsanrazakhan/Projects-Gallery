@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F1F5F8;
+  font-family: 'Open Sans', sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+
+}
+
+main {
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.header {
+  margin: 0 0 4rem 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+hr {
+  width: 75px;
+  height: 4px;
+  border: none;
+  background-color: #49a6e9;
+  margin: auto;
+  margin-top: 8px;
+}
+
+.card {
+  background-color: #fff;
+  max-width: 40rem;
+  padding: 24px 32px;
+  border-radius: 15px;
+  margin: 0 10px;
+}
+
+.img-div {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+
+}
+
+#image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 100%;
+  box-shadow: 8px -5px #49a6e9;
+}
+
+.quotes {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #49a6e9;
+  display: grid;
+  place-items: center;
+}
+
+.name {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.role {
+  margin: 0 0 8px 0;
+  font-size: 13.6px;
+  color: #49a6e9;
+}
+
+.desc {
+  margin: 0 0 12px 0;
+  color: gray;
+}
+
+.left,
+.right,
+button {
+  cursor: pointer;
+}
+
+button {
+  border-color: #49a6e9;
+  border-radius: 10px;
+  background-color: rgb(73, 166, 233, 0.2);
+  color: #49a6e9;
+  padding: 5px 10px;
+  transition: all ease 0.5s;
+  margin: 4px 0 0 0;
+}
+
+button:hover {
+  background-color: #49a6e9;
+  color: #000000;
+}
