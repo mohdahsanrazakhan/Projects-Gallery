@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=IBM+Plex+Mono&family=IBM+Plex+Sans&family=Open+Sans&family=Outfit&family=Poppins:ital,wght@0,400;0,700;1,400;1,800&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* font-family: 'Great Vibes', cursive;
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #FC466B, #3F5EFB)
+}
+
+main {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 0 0 3rem 0;
+  letter-spacing: 2px;
+  color: #f2f2f2;
+}
+
+#new-year {
+  color: turquoise;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: auto;
+  width: fit-content;
+}
+
+.day-part {
+  display: flex;
+  gap: 1rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-time {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 2rem 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+  width: 6rem;
+}
+
+#days-left {
+  border-radius: 18px 0 0 18px;
+}
+
+#seconds-left {
+  border-radius: 0 18px 18px 0;
+}
+
+.date-title {
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
+.intro {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 2px;
+}
+
+.intro span {
+  font-family: 'Outfit', sans-serif;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 425px) {
+  .countdown {
+    flex-direction: column;
+  }
+
+  .day-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #hours-left {
+    border-radius: 18px 0 0 18px;
+  }
+
+  #days-left {
+    width: 100%;
+    border-radius: 18px;
+  }
+}
