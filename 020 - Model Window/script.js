@@ -7,12 +7,9 @@ const closeBtn = document.querySelector('.close-btn');
 // when user clicks modal-btn add .open-modal to modal-overlay
 modalBtn.addEventListener('click', () => {
   modalOverlay.classList.add('open-modal');
-  console.log('abc');
-  // modalOverlay.style.visibility = visibility;
 })
 
 // when user clicks close-btn remove .open-modal from modal-overlay
 closeBtn.addEventListener('click', () => {
   modalOverlay.classList.remove('open-modal');
-  console.log('abc');
 })
