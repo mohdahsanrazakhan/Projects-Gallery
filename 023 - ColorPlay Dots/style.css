@@ -1,0 +1,84 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  position: absolute;
+  text-align: center;
+  top: 0.5rem;
+
+}
+
+.magic {
+  color: #f4f4f4;
+  letter-spacing: 1px;
+  animation: background-pen 3s linear infinite;
+  background: linear-gradient(to right,
+      #D16BA5,
+      #86A8E7,
+      #5FFBF1,
+      #D16BA5);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+@keyframes background-pen {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.row-1 {
+  display: flex;
+  gap: 15px;
+}
+
+.dots {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  cursor: pointer;
+  padding: 5px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0.5rem;
+  text-align: center;
+}
+
+footer p {
+  color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
