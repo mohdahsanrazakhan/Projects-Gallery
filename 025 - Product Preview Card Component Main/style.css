@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  margin: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  width: 600px;
+  margin: auto;
+}
+
+.product-img {
+  width: 300px;
+  border-radius: 10px 0 0 10px;
+}
+
+.products-details {
+  padding: 30px;
+}
+
+.category {
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 3.5px;
+  margin: 0 0 10px 0;
+}
+
+.product-name {
+  font-family: 'Fraunces', serif;
+}
+
+.about-product {
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 10px 0 10px 0;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 0;
+}
+
+.main-price {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  color: hsl(158, 36%, 37%);
+  margin-right: 15px;
+}
+
+.previous-price {
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-decoration-line: line-through;
+}
+
+button {
+  border: none;
+  border-radius: 7px;
+  background-color: hsl(158, 36%, 37%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  width: 100%;
+  padding: 13px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 0 0 0;
+}
+
+button:hover {
+  background-color: hsl(212, 21%, 14%);
+}
+
+button img {
+  width: 15px;
+  margin-right: 10px;
+}
+
+.attribution {
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+/* Small smartphones [325px -> 425px] */
+@media only screen and (max-width: 640px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 355px;
+  }
+
+  .product-img {
+    content: url(images/image-product-mobile.jpg);
+    width: 355px;
+    border-radius: 10px 10px 0 0;
+  }
+}
