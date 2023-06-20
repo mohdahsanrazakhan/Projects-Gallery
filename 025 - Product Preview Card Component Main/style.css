@@ -49,6 +49,8 @@ main {
 
 .product-name {
   font-family: 'Fraunces', serif;
+  margin: 0 0 20px 0;
+
 }
 
 .about-product {
@@ -56,13 +58,13 @@ main {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 22px;
-  margin: 10px 0 10px 0;
+  margin: 10px 20px 10px 0;
 }
 
 .prices {
   display: flex;
   align-items: center;
-  margin: 10px 0 10px 0;
+  margin: 10px 20px 10px 0;
 }
 
 .main-price {
@@ -93,7 +95,7 @@ button {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin: 40px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 button:hover {
