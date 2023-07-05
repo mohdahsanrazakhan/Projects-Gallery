@@ -26,7 +26,18 @@
         <input type="password" name="pwd" id="pwd" placeholder="Password"
           class="border rounded-md py-[14px] px-[16px] outline-none w-full" required>
         <span type="checkbox" name="showPassword" id="showPassword" onclick="showPassword()"
-          class="absolute top-4 right-4 text-sm text-gray-500/75 uppercase cursor-pointer">show</span>
+          class="absolute top-4 right-4 text-sm text-gray-500/75 uppercase cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye-closed" width="24" height="24"
+            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M21 9c-2.4 2.667 -5.4 4 -9 4c-3.6 0 -6.6 -1.333 -9 -4"></path>
+            <path d="M3 15l2.5 -3.8"></path>
+            <path d="M21 14.976l-2.492 -3.776"></path>
+            <path d="M9 17l.5 -4"></path>
+            <path d="M15 17l-.5 -4"></path>
+          </svg>
+        </span>
       </div>
       <button type="submit" onclick="login()" id="login"
         class="bg-[#1877f2] text-[#ffffff] text-lg font-bold py-[14px] px-[16px] rounded-lg w-full tracking-wider">Log
@@ -42,32 +53,7 @@
     </div>
   </div>
 
-  <script>
-    const isShow = document.getElementById('showPassword')
-    const email = document.getElementById('email')
-    const loginBtn = document.getElementById('login');
-    var pwd = document.getElementById("pwd")
-
-
-    function login() {
-      emailRegX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-      (email.value.match(emailRegX) && pwd.value) ? alert(`Your email/number is ${email.value}.\nThis is a facebook clone page.\nGo to ${'https://m.facebook.com/login/?refsrc=deprecated&_rdr'} for log in to facebook.\nNo data stored!`) : loginBtn.disabled;
-    }
-
-    function signup() {
-      window.open('https://www.facebook.com/r.php?locale=en_GB&display=page')
-    }
-
-    function showPassword() {
-      if (pwd.type === "password") {
-        pwd.type = "text";
-        isShow.innerText = "hide"
-      } else {
-        pwd.type = "password";
-        isShow.innerHTML = "show"
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 
 </body>
 
