@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Shadows+Into+Light&family=Ubuntu&display=swap');
+
+body {
+    background-color: #393E46;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.dice {
+    text-align: center;
+    display: inline-block;
+}
+
+h1 {
+    margin: 30px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 5px 0 #232931;
+    font-size: 8rem;
+    color: #4ECCA3;
+
+}
+
+p {
+    color: #4ECCA3;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2rem;
+}
+
+img {
+    width: 80%;
+}
+
+footer {
+    margin-top: 5%;
+    color: #EEEEEE;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-size: 2rem; */
+}
