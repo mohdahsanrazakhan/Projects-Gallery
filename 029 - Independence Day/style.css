@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'McLaren';
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  gap: 15px;
+  height: 100vh;
+}
+
+
+.content-style {
+  color: #3f62ab;
+  text-shadow: #777 1px 0 10px;
+  text-align: center;
+}
+
+.language-style {
+  text-shadow: #3f62ab 1px 0 10px;
+}
+
+.magic {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(to right, white, #8cc78c, white, #fbb97f, white);
+  background-size: 200% 100%;
+  animation: gradientAnimation 10s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 200% 0%;
+  }
+}
+
+.dev {
+  margin-bottom: 35px;
+  text-shadow: #3f62ab 1px 0 10px;
+}
+
+.dev a {
+  text-decoration: none;
+  color: #000000;
+}
