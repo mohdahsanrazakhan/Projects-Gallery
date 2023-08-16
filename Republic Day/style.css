@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+
+body {
+    background-color: #98c1d9;
+    font-family: McLaren;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14%;
+}
+
+.diffCountries {
+    background-color: #3d5a80;
+    border-radius: 20px;
+    color: #fff;
+    width: 30rem;
+    padding: 15px;
+}
+
+#text-field {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#lang {
+    text-shadow: #FC0 1px 0 10px;
+}
+
+.diffCountries:hover {
+    background-image: linear-gradient(180deg, #fbb97f, #8cc78c);
+    color: #3d5a80;
+    text-shadow: 2px 2px 5px gray;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5),
+        0px 2px 4px rgba(0, 0, 0, 0.1),
+        0px 4px 8px rgba(0, 0, 0, 0.1),
+        0px 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translate(-5px);
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    left: 0px;
+    bottom: 30px;
+    height: 30px;
+    width: 100%;
+}
